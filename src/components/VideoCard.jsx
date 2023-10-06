@@ -5,7 +5,6 @@ import {
   demoChannelTitle,
   demoChannelUrl,
   demoProfilePicture,
-  demoThumbnailUrl,
   demoVideoTitle,
   demoVideoUrl,
 } from "../utils/constants";
@@ -19,9 +18,9 @@ const VideoCard = ({
   return (
     <Card
       sx={{
-        width: { md: "250px", xs: "100%" },
+        width: { xs: "100%", sm: "358px", md: "320px" },
         boxShadow: "none",
-        borderRadius: 3,
+        borderRadius: 0,
       }}
     >
       <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
